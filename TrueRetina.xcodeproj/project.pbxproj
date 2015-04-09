@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		758EA29F1AD60A5500809777 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 758EA29E1AD60A5500809777 /* AppDelegate.m */; };
+		758EA2A11AD60A5500809777 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 758EA2A01AD60A5500809777 /* main.m */; };
+		758EA2A61AD60A5500809777 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758EA2A51AD60A5500809777 /* Images.xcassets */; };
+		758EA2A91AD60A5500809777 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758EA2A71AD60A5500809777 /* Main.storyboard */; };
+		758EA2B51AD60A5500809777 /* TrueRetinaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 758EA2B41AD60A5500809777 /* TrueRetinaTests.m */; };
+		758EA2BF1AD6162500809777 /* ResolutionMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 758EA2BE1AD6162500809777 /* ResolutionMenu.xib */; };
+		758EA2C11AD6194900809777 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758EA2C01AD6194900809777 /* Cocoa.framework */; };
+		758EA2C31AD6196C00809777 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758EA2C21AD6196C00809777 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		758EA2AF1AD60A5500809777 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 758EA2901AD60A5500809777 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758EA2971AD60A5500809777;
+			remoteInfo = TrueRetina;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		758EA2981AD60A5500809777 /* TrueRetina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueRetina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		758EA29C1AD60A5500809777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758EA29D1AD60A5500809777 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		758EA29E1AD60A5500809777 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		758EA2A01AD60A5500809777 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		758EA2A51AD60A5500809777 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		758EA2A81AD60A5500809777 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		758EA2AE1AD60A5500809777 /* TrueRetinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueRetinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758EA2B31AD60A5500809777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758EA2B41AD60A5500809777 /* TrueRetinaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrueRetinaTests.m; sourceTree = "<group>"; };
+		758EA2BE1AD6162500809777 /* ResolutionMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResolutionMenu.xib; sourceTree = "<group>"; };
+		758EA2C01AD6194900809777 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		758EA2C21AD6196C00809777 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		758EA2951AD60A5500809777 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758EA2C31AD6196C00809777 /* Foundation.framework in Frameworks */,
+				758EA2C11AD6194900809777 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758EA2AB1AD60A5500809777 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		758EA28F1AD60A5500809777 = {
+			isa = PBXGroup;
+			children = (
+				758EA2C21AD6196C00809777 /* Foundation.framework */,
+				758EA2C01AD6194900809777 /* Cocoa.framework */,
+				758EA29A1AD60A5500809777 /* TrueRetina */,
+				758EA2B11AD60A5500809777 /* TrueRetinaTests */,
+				758EA2991AD60A5500809777 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		758EA2991AD60A5500809777 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				758EA2981AD60A5500809777 /* TrueRetina.app */,
+				758EA2AE1AD60A5500809777 /* TrueRetinaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		758EA29A1AD60A5500809777 /* TrueRetina */ = {
+			isa = PBXGroup;
+			children = (
+				758EA29D1AD60A5500809777 /* AppDelegate.h */,
+				758EA29E1AD60A5500809777 /* AppDelegate.m */,
+				758EA2A51AD60A5500809777 /* Images.xcassets */,
+				758EA2A71AD60A5500809777 /* Main.storyboard */,
+				758EA29B1AD60A5500809777 /* Supporting Files */,
+				758EA2BE1AD6162500809777 /* ResolutionMenu.xib */,
+			);
+			path = TrueRetina;
+			sourceTree = "<group>";
+		};
+		758EA29B1AD60A5500809777 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				758EA29C1AD60A5500809777 /* Info.plist */,
+				758EA2A01AD60A5500809777 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		758EA2B11AD60A5500809777 /* TrueRetinaTests */ = {
+			isa = PBXGroup;
+			children = (
+				758EA2B41AD60A5500809777 /* TrueRetinaTests.m */,
+				758EA2B21AD60A5500809777 /* Supporting Files */,
+			);
+			path = TrueRetinaTests;
+			sourceTree = "<group>";
+		};
+		758EA2B21AD60A5500809777 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				758EA2B31AD60A5500809777 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		758EA2971AD60A5500809777 /* TrueRetina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758EA2B81AD60A5500809777 /* Build configuration list for PBXNativeTarget "TrueRetina" */;
+			buildPhases = (
+				758EA2941AD60A5500809777 /* Sources */,
+				758EA2951AD60A5500809777 /* Frameworks */,
+				758EA2961AD60A5500809777 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrueRetina;
+			productName = TrueRetina;
+			productReference = 758EA2981AD60A5500809777 /* TrueRetina.app */;
+			productType = "com.apple.product-type.application";
+		};
+		758EA2AD1AD60A5500809777 /* TrueRetinaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758EA2BB1AD60A5500809777 /* Build configuration list for PBXNativeTarget "TrueRetinaTests" */;
+			buildPhases = (
+				758EA2AA1AD60A5500809777 /* Sources */,
+				758EA2AB1AD60A5500809777 /* Frameworks */,
+				758EA2AC1AD60A5500809777 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758EA2B01AD60A5500809777 /* PBXTargetDependency */,
+			);
+			name = TrueRetinaTests;
+			productName = TrueRetinaTests;
+			productReference = 758EA2AE1AD60A5500809777 /* TrueRetinaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		758EA2901AD60A5500809777 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Adrian Kemp";
+				TargetAttributes = {
+					758EA2971AD60A5500809777 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					758EA2AD1AD60A5500809777 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 758EA2971AD60A5500809777;
+					};
+				};
+			};
+			buildConfigurationList = 758EA2931AD60A5500809777 /* Build configuration list for PBXProject "TrueRetina" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 758EA28F1AD60A5500809777;
+			productRefGroup = 758EA2991AD60A5500809777 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				758EA2971AD60A5500809777 /* TrueRetina */,
+				758EA2AD1AD60A5500809777 /* TrueRetinaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		758EA2961AD60A5500809777 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758EA2BF1AD6162500809777 /* ResolutionMenu.xib in Resources */,
+				758EA2A61AD60A5500809777 /* Images.xcassets in Resources */,
+				758EA2A91AD60A5500809777 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758EA2AC1AD60A5500809777 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		758EA2941AD60A5500809777 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758EA2A11AD60A5500809777 /* main.m in Sources */,
+				758EA29F1AD60A5500809777 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758EA2AA1AD60A5500809777 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758EA2B51AD60A5500809777 /* TrueRetinaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		758EA2B01AD60A5500809777 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758EA2971AD60A5500809777 /* TrueRetina */;
+			targetProxy = 758EA2AF1AD60A5500809777 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		758EA2A71AD60A5500809777 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				758EA2A81AD60A5500809777 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		758EA2B61AD60A5500809777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		758EA2B71AD60A5500809777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		758EA2B91AD60A5500809777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TrueRetina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		758EA2BA1AD60A5500809777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TrueRetina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		758EA2BC1AD60A5500809777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TrueRetinaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrueRetina.app/Contents/MacOS/TrueRetina";
+			};
+			name = Debug;
+		};
+		758EA2BD1AD60A5500809777 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TrueRetinaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrueRetina.app/Contents/MacOS/TrueRetina";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		758EA2931AD60A5500809777 /* Build configuration list for PBXProject "TrueRetina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758EA2B61AD60A5500809777 /* Debug */,
+				758EA2B71AD60A5500809777 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		758EA2B81AD60A5500809777 /* Build configuration list for PBXNativeTarget "TrueRetina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758EA2B91AD60A5500809777 /* Debug */,
+				758EA2BA1AD60A5500809777 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		758EA2BB1AD60A5500809777 /* Build configuration list for PBXNativeTarget "TrueRetinaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758EA2BC1AD60A5500809777 /* Debug */,
+				758EA2BD1AD60A5500809777 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 758EA2901AD60A5500809777 /* Project object */;
+}
