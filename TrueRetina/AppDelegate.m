@@ -35,6 +35,13 @@ CGDisplayModeRef findDisplayMode(CGFloat width, CGFloat height, CGDirectDisplayI
 
 @end
 
+void findNativeDisplayMode(const void *displayMode, void *nativeDisplayMode) {
+    uint32_t ioFlags = CGDisplayModeGetIOFlags(((CGDisplayModeRef)displayMode));
+    if (ioFlags & kDisplayModeNativeFlag) {
+        *((CGDisplayModeRef *)nativeDisplayMode) = ((CGDisplayModeRef)displayMode);
+    }
+}
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -52,17 +59,16 @@ CGDisplayModeRef findDisplayMode(CGFloat width, CGFloat height, CGDirectDisplayI
 
 - (IBAction)setRetina:(id)sender {
     CGDirectDisplayID mainDisplay = CGMainDisplayID();
-    NSRect screenFrame = [NSScreen mainScreen].frame;
-    CGFloat screenScale = [NSScreen mainScreen].backingScaleFactor;
-    
-    CGDisplayModeRef targetMode = findDisplayMode(screenFrame.size.width * screenScale, screenFrame.size.height * screenScale, mainDisplay);
+    CFArrayRef availableModes = CGDisplayCopyAllDisplayModes(mainDisplay, NULL);
+    CFIndex availableModeCount = CFArrayGetCount(availableModes);
+    CGDisplayModeRef nativeDisplayMode;
+    CFArrayApplyFunction(availableModes, CFRangeMake(0, availableModeCount), findNativeDisplayMode , &nativeDisplayMode);
     
     CGDisplayConfigRef displayConfig;
     if (CGBeginDisplayConfiguration(&displayConfig) == kCGErrorSuccess) {
-        CGConfigureDisplayWithDisplayMode(displayConfig, mainDisplay, targetMode, NULL);
+        CGConfigureDisplayWithDisplayMode(displayConfig, mainDisplay, nativeDisplayMode, NULL);
         CGCompleteDisplayConfiguration(displayConfig, kCGConfigureForSession);
     }
-    CGDisplayModeRelease(targetMode);
 }
 
 - (IBAction)setStandard:(id)sender {
@@ -71,24 +77,3 @@ CGDisplayModeRef findDisplayMode(CGFloat width, CGFloat height, CGDirectDisplayI
 
 @end
 
-CGDisplayModeRef findDisplayMode(CGFloat width, CGFloat height, CGDirectDisplayID display) {
-    CFArrayRef availableModes = CGDisplayCopyAllDisplayModes(display, NULL);
-    
-    CGDisplayModeRef targetMode = NULL;
-    
-    for (int i = 0; i < CFArrayGetCount(availableModes); i++) {
-        CGDisplayModeRef mode = (CGDisplayModeRef)CFArrayGetValueAtIndex(availableModes, i);
-        size_t displayModeHeight = CGDisplayModeGetHeight(mode);
-        size_t displayModeWidth = CGDisplayModeGetWidth(mode);
-        if (displayModeHeight == height && displayModeWidth == width) {
-            targetMode = mode;
-            break;
-        }
-    }
-    
-    if (targetMode) {
-        CGDisplayModeRetain(targetMode);
-    }
-    CFRelease(availableModes);
-    return targetMode;
-}
