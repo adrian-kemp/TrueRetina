@@ -42,6 +42,7 @@ void findNativeDisplayMode(const void *displayMode, void *nativeDisplayMode) {
     }
 }
 
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -50,14 +51,20 @@ void findNativeDisplayMode(const void *displayMode, void *nativeDisplayMode) {
     self.menuBarItem.image = [NSImage imageNamed:@"TrueRetina"];
     
     NSMenu *menu = [[NSMenu alloc] init];
-    [menu addItemWithTitle:@"Retina" action:@selector(setRetina:) keyEquivalent:@""];
+    NSMenuItem *retinaMenuItem = [menu addItemWithTitle:@"Retina" action:@selector(setRetina:) keyEquivalent:@""];
     [menu addItemWithTitle:@"Standard" action:@selector(setStandard:) keyEquivalent:@""];
     [menu addItem:[NSMenuItem separatorItem]]; // A thin grey line
     [menu addItemWithTitle:@"Quit TrueRetina" action:@selector(terminate:) keyEquivalent:@""];
     self.menuBarItem.menu = menu;
+    
+    [self setRetina:retinaMenuItem];
 }
 
-- (IBAction)setRetina:(id)sender {
+- (IBAction)setRetina:(NSMenuItem *)sender {
+    for (NSMenuItem *menuItem in sender.menu.itemArray) {
+        menuItem.state = 0;
+    };
+    [sender setState:1];
     CGDirectDisplayID mainDisplay = CGMainDisplayID();
     CFArrayRef availableModes = CGDisplayCopyAllDisplayModes(mainDisplay, NULL);
     CFIndex availableModeCount = CFArrayGetCount(availableModes);
@@ -71,7 +78,11 @@ void findNativeDisplayMode(const void *displayMode, void *nativeDisplayMode) {
     }
 }
 
-- (IBAction)setStandard:(id)sender {
+- (IBAction)setStandard:(NSMenuItem *)sender {
+    for (NSMenuItem *menuItem in sender.menu.itemArray) {
+        menuItem.state = 0;
+    };
+    [sender setState:1];
     CGRestorePermanentDisplayConfiguration();
 }
 
